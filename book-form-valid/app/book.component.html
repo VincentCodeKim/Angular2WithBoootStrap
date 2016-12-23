@@ -1,0 +1,31 @@
+<h3>도서등록</h3>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <label for="id" style="width:100px;display:inline-block" >아이디: </label>
+    <input type="text" name="id" ngModel #id="ngModel" required><br>
+    <div [hidden]="id.valid" style="background-color:red;color:white">
+        아이디를 입력하세요.
+    </div>    
+    <label for="name" style="width:100px;display:inline-block" >도서명: </label>
+    <input type="text" name="name" ngModel #name="ngModel" required><br>
+    <div [hidden]="name.valid" style="background-color:red;color:white">
+        도서명을 입력하세요.
+    </div>      
+    <label for="price" style="width:100px;display:inline-block" >가격: </label>
+    <input type="number" name="price" ngModel #price="ngModel" required><br>
+    <div [hidden]="price.valid" style="background-color:red;color:white">
+        가격을 입력하세요.
+    </div>      
+    <label for="date" style="width:100px;display:inline-block" >날짜: </label>
+    <input type="date" name="date" ngModel #date="ngModel" required><br>
+    <div [hidden]="date.valid" style="background-color:red;color:white">
+        날짜를 입력하세요.
+    </div>      
+    <br>
+    <button type="submit">등록</button><br>
+    <br>
+    <div style="background-color:gray">
+    <div [innerText]="'id:' + id.value "></div>
+    <div [innerText]="'name:' + name.value"></div>
+    <div [innerText]="'price:' + price.value"></div>
+    <div [innerText]="'date:' + date.value"></div>
+</div>

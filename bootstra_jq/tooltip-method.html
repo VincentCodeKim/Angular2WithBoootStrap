@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tooltips</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <style>
+  /* Tooltip */
+  .color + .tooltip > .tooltip-inner {
+      background-color: #73AD21;
+      color: #FFFFFF;
+      border: 1px solid green;
+      padding: 15px;
+      font-size: 20px;
+  }
+  /* Tooltip on top */
+  .color + .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid red;
+  }
+  </style>
+  
+</head>
+
+<body>
+<div class="container">
+
+	<br><br><br><br>
+	<div style="margin-top: 30px;">
+		<a href="#" class="color" data-toggle="tooltip" data-html="true" title="<h3>Default <a href='http://google.com'>tooltip</a></h3>">you probably</a>
+	</div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+		$('[data-toggle="tooltip"]').tooltip({
+			delay: { "show": 0, "hide": 10000 }
+		});
+        $("[data-toggle='tooltip']").on("show.bs.tooltip", function(e) {
+            alert('event start!!');
+        });
+	});
+</script>
+
+</body>
+</html>

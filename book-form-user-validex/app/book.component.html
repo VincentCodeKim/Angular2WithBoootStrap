@@ -1,0 +1,8 @@
+<h3>도서등록</h3>
+<form [formGroup]="bookForm" #f (ngSubmit)="onSubmit(f)">
+    <label for="name" style="width:100px;display:inline-block" >가격: </label>
+    <input type="text" name="name" formControlName="price" ><br><br>
+    <div *ngIf="bookForm.controls['price'].touched && !bookForm.controls['price'].errors.valid"  style="background-color:red;color:white">
+        {{bookForm.controls['price'].errors.errorMsg}}
+    </div>  
+</form>

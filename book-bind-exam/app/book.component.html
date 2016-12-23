@@ -1,0 +1,5 @@
+<h3>Book List</h3>
+<ul >
+    <li *ngFor="let book of booksResult" class="font-red"><img src="./assets/image/{{book.img}}" height="80"> {{book.name}} </li>
+</ul>
+검색조건: <input type="text" name="bookName" (blur)="searchName($event)"><br>

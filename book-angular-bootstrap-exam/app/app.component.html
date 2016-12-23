@@ -1,0 +1,10 @@
+<h3>Example</h3><br>
+<exbutton buttonClass="btn btn-default" ngControl="button1"
+    (click)="onSearch(myList, myPagination)" text="조회">
+</exbutton><br><br>
+<exlist listClass="list-group-item"  #myList ngControl="myList"  
+    (itemClick)="onItemClick($event)">   
+</exlist><br>
+<expagenation #myPagination buttonCount="3" ngControl="myPagination"     
+    (changePage)="onChangePage($event)">
+</expagenation>

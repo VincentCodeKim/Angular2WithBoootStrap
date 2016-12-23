@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+      body { margin: 50px; }
+    </style>
+</head>
+
+<body>
+<!-- 순서가 명확한 항목들의 목록 -->
+<div >
+  <h4>Ordered</h4>
+  <ol >
+    <li>green tea</li>
+    <li>black tea</li>
+    <li>coffee
+      <ol>
+        <li>ice americano</li>
+        <li>espresso</li>
+        <li>coffee latte</li>
+      </ol>
+    </li>
+    <li>cocoa</li>
+  </ol>
+</div>
+
+<!-- 순서가 명확하지 않은 항목들의 목록 -->
+  <div >
+  	<h4>Unordered</h4>
+    <ul >
+      <li>green tea</li>
+      <li>black tea</li>
+      <li>coffee
+        <ul>
+          <li>ice americano</li>
+          <li>espresso</li>
+          <li>coffee latte</li>
+        </ul>
+      </li>
+      <li>cocoa</li>
+    </ul>
+  </div>
+  
+<!-- 스타일이 없는 항목들의 목록 -->
+<div >
+  <h4>Unstyled</h4>
+  <ul class="list-unstyled">
+    <li>green tea</li>
+    <li>black tea</li>
+    <li>coffee
+      <ul>
+        <li>ice americano</li>
+        <li>espresso</li>
+        <li>coffee latte</li>
+      </ul>
+    </li>
+    <li>cocoa</li>
+  </ul>
+</div>
+  
+<!-- 항목들을 한줄에 보여줌 -->
+<div >
+  <h4>Inline</h4>
+  <ul class="list-inline">
+    <li>green tea</li>
+    <li>black tea</li>
+    <li>coffee</li>
+    <li>cocoa</li>
+  </ul>
+</div>
+
+</body>
+</html>

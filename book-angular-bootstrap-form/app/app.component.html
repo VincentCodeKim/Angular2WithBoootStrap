@@ -1,0 +1,43 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <h3>Example</h3><br>
+    <exbutton buttonClass="btn btn-default" 
+        (click)="onSearch()" text="조회">
+    </exbutton><br><br>
+    <exlist  ngModel listClass="list-group-item" 
+        [data]="myList.data" 
+        [displayField]="myList.displayField" 
+        [valueField]="myList.valueField" 
+        name="myList"  
+        ngDefaultControl
+        (itemClick)="onItemClick($event)">   
+    </exlist><br>
+    <expagenation 
+        [buttonCount]="myPagination.buttonCount" 
+        [currentPage]="myPagination.currentPage" [limit]="myPagination.limit" [buttonCount]="myPagination.buttonCount" 
+        [buttonStartIndex]="myPagination.buttonStartIndex"
+        [maxPage]="myPagination.maxPage"
+        [totalCount]="myPagination.totalCount"
+        [numberItems] = "myPagination.numberItems"
+        name="myPagination" ngDefaultControl    
+        (changePage)="onChangePage($event)">
+    </expagenation>
+</form>
+
+<!--
+
+    @Input() currentPage:number = 1  // 현재 페이지번호
+    @Input() limit:number = 10   // 미사용 데이터 건 수
+    @Input() buttonCount:number = 5  // 버튼의 개수
+    @Input() buttonStartIndex:number = 1; // 첫 번째 표현될 버튼의 숫자
+    @Input() maxPage:number = 1; // 최대 페이지 수
+    @Input() totalCount:number = 0; // 총 데이터 건 수
+    @Input() numberItems:number[] = []; // 버튼 그룹의 숫자를 가지고 있는 배열 객체
+    @Output() changePage= new EventEmitter<number>();
+
+    <exlist  ngModel [(ngModel)]="myList" listClass="list-group-item" name="myList"  ngDefaultControl
+        (itemClick)="onItemClick($event)">   
+    </exlist><br>
+    <expagenation ngModel  [(ngModel)]="myPagination" name="myPagination" ngDefaultControl    
+        (changePage)="onChangePage($event)">
+    </expagenation>    
+-->

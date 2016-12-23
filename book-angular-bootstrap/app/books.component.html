@@ -1,0 +1,11 @@
+<ul  class="list-group">
+    <li *ngFor="let book of booksResult" class="list-group-item">
+        <a [routerLink]="['/book', {id:book.id}]">
+        <img src="./assets/image/{{book.img}}" height="80"> {{book.name}} 
+        </a>
+   </li>
+</ul>
+<br>
+<div class="form-group">
+<label class="control-label col-sm-2" for="email">검색조건:</label>
+<input type="text" class="form-control"  placeholder="검색조건을 입력하세요" name="bookName" (blur)="searchName($event)">

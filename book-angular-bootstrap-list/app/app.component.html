@@ -1,0 +1,5 @@
+<h3>리스트 데이터 설정</h3>
+<button class="btn btn-default" 
+    (click)="myList.setData(data, 'displayField', 'valueField')">데이터 설정 </button><br><br>
+<exlist #myList (itemClick)="onItemClick($event)">   
+</exlist>

@@ -1,0 +1,6 @@
+<ul [class]="listClass">
+    <li [class]="listClass" *ngFor="let item of data">
+        <a (click)="onItemClick(item[valueField])" 
+            [innerHTML]="item[displayField]"></a>
+    </li>
+</ul>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html land="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title> L B O  </title>
+		
+		<!-- Bootstrap Core CSS -->
+  	    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="css/default.css"  rel="stylesheet">
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/earlyaccess/jejuhallasan.css'  rel='stylesheet' type='text/css'>
+        <link  href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"  type='text/css'>
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+
+	<body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html"><h3 style="padding:0 0 10 0; margin:0;"><strong>LBO</strong></h3></a>
+                </div>
+                    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="book.html">소개</a></li>
+                        <li><a href="#">IT 정보</a></li>
+                        <li class="dropdown"><a href="book.html" class="dropdown-toggle" data-toggle="dropdown"> LBO 책 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="book.html">IT 전문서</a></li>
+                                <li><a href="book.html">웹/컴퓨터 입문</a></li>
+                                <li><a href="book.html">그래픽/멀티미디어</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    
+                    <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="Search..">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                    </form>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Contact Us</a></li>
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+            </div>  <!-- /.container -->
+        </nav>
+	
+		<!-- Header Carousel -->	
+		<header id="myCarousel" class="carousel slide" > 
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+				
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+                    <img src="img/carousel1.PNG">
+					<div class="carousel-caption">
+						<span class="subheading">안드로이드 초급 개발자가 게임을 만들기 위해서 필요한 기본과 응용</span>
+						<h1>OpenGL ES 2.0 안드로이드 게임</h1>
+					</div>
+				</div>
+				<div class="item">
+                    <img src="img/carousel2.PNG">
+					<div class="carousel-caption">
+						<span class="subheading">웹앱부터 하이브리드 앱까지 완벽하게 마스터할 수 있도록 도움을 줄 수 있는 자습서</span>
+						<h1>웹앱 하이브리드앱 기초부터 마켓 배포까지</h1>
+					</div>
+				</div>
+				<div class="item">
+                    <img src="img/carousel3.PNG">
+					<div class="carousel-caption">
+						<span class="subheading">프로그램 개발을 위해 클래스 개념부터 개발 및 배포까지의 방법을 설명</span>
+						<h1>EXTJS 6 프로그래밍</h1>
+					</div>
+				</div>
+			</div> <!-- /.carousel-inner -->
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
+		</header> <!-- Header carousel -->
+
+
+        <!-- Main Content -->
+        <div class="container text-center">    
+            <div class="row">
+                <!-- Left Content -->
+                <div class="col-sm-3 well">
+                    <div class="well well-sm text-center ">
+                        <img src="img/site1_intro.jpg" class="center-block img-rounded img-responsive" width="300" height="200">
+                        <p><a href="#">세미나 안내1</a></p>
+                        <p>
+                            <span class="label label-default"><i class="fa fa-map-marker" aria-hidden="true"></i> 안내도</span>
+                            <span class="label label-primary"><i class="fa fa-krw" aria-hidden="true"></i> 입장료안내</span>
+                            <span class="label label-success"><i class="fa fa-car" aria-hidden="true"></i> 교통정보</span>
+                            <span class="label label-info"><i class="fa fa-book" aria-hidden="true"></i> 안내책자</span>
+                            <span class="label label-danger"><i class="fa fa-comments" aria-hidden="true"></i> 편의시설</span>
+                        </p>
+                    </div> 	
+                    
+                    <div class="alert alert-success fade in" style="background-image: url('img/site1_left1.jpg')">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p><strong class="subtitle">유용한 사이트</strong></p><br> 일하다가 공부하다 확인이 필요할때 좋아요.!!
+                    </div>
+                    <p class="textlink"><a href="http://exgen.miraeweb.com">exgen</a></p>
+                    <p class="textlink"><a href="http://www.miraeweb.com">미래웹</a></p>
+                    <p class="textlink"><a href="https://www.sencha.com/">센차터치</a></p>
+                    <p class="textlink"><a href="https://getbootstrap.com/">부트스트랩</a></p>
+                    <p class="textlink"><a href="http://www.w3schools.com/">w3school</a></p>
+                </div> <!-- col-sm-3 / left content -->
+                    
+                <!-- Center Contents -->  
+                <div class="col-sm-7"> 
+                    <div class="row top-margin">
+                        <div class="col-sm-12">
+                            <div class="panel panel-info text-left">
+                                <div class="panel-heading"><h4><strong>현재 관심 분야</strong></h4></div>
+                                <div class="panel-body">
+                                    <p contenteditable="true"><strong>AngularJS</strong></p>
+                                    <p>
+                                        자바스크립트 프레임워크들 중에서 최근 가장 주목 받는 프레임워크로 <abbr title="Model View ViewModel">MVVM</abbr> 패턴을 가장 잘 구현 하였다고 알려져 있다.
+                                        이를 이용하면 HTML 기반에서 <abbr title="Model View Controller"> MVC</abbr> 패턴을 적용하여 적은 소스 코드로 웹 어플리케이션을 쉽고 빠르게 만들수 있다.
+                                    </p>
+                                    <div class="text-right">
+                                        <button type="button"  class="btn btn-default btn-sm" >
+                                            <span class="glyphicon glyphicon-thumbs-up"></span> 자세히 보기
+                                        </button>
+                                    </div> 
+                                </div>
+                            </div><!-- panel -->
+                        </div> <!-- col-sm-12 -->
+                    </div> <!-- row -->
+                        
+                        
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="well well-space">
+                                <img src="img/book-game.PNG" class="center-block img-rounded img-responsive" height="200" width="300" >
+                            </div>
+                        </div><!-- col-sm-3 -->
+                        <div class="col-sm-9">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-sm-9 text-center"><h4><strong>OpenGL ES 2.0 안드로이드 게임</strong></h4></div>
+                                    <div class="col-sm-3 text-right"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> more</a></div>
+                                </div>
+                                <p>안드로이드 SDK에서 기본적으로 제공하는 OPENGL ES 2.0을 기반으로 2D 게임 프로그램을 개발한다. 특히 안드로이드 초급 개발자가 게임을 만들기 위해서 필요한 기본적인 내용을 설명하고 응용할 수 있도록 작성했다. 어려운 게임기법에 대한 설명이 아니다. 아이디어만 있다면 간단한 방법으로...</p>
+                            </div> <!-- well -->
+                        </div> <!-- col-sm-9 -->
+                    </div> <!-- row -->
+            
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="well well-space">
+                                <img src="img/book-webapp.PNG" class="center-block img-rounded img-responsive" height="200" width="300" >
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-sm-9 text-center"><h4><strong>하이브리드앱 기초부터 마켓 배포까지</strong></h4></div>
+                                    <div class="col-sm-3 text-right"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> more</a></div>
+                                </div>
+                                <p>『웹앱 하이브리드앱 기초부터 마켓 배포까지』는 웹앱부터 하이브리드 앱까지 완벽하게 마스터할 수 있도록 도움을 줄 수 있는 자습서이자 동영상을 통해 차근차근 같이 진행할 수 있는 교재다. </p>
+                            </div>
+                        </div> <!-- col-sm-9 -->
+                    </div> <!-- row -->
+            
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="well well-space">
+                                <img src="img/book-extjs.PNG" class="center-block img-rounded img-responsive" height="200" width="300" >
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-sm-9 text-center"><h4><strong>Ext JS 6 프로그래밍</strong></h4></div>
+                                    <div class="col-sm-3 text-right"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> more</a></div>
+                                </div>
+                                <p>『EXTJS 6 프로그래밍』은 EXT JS6 데스크탑 프로그램 개발을 위해 클래스 개념부터 개발 및 배포까지의 방법을 설명하고 있다. 기본적인 뷰에서의 개발과 MVC, MVVM, MVC + MVVM 프레임워크 구조를 기준으로 개발 방식을 알려준다.</p>
+                            </div>
+                        </div>
+                    </div>  <!-- row -->
+                </div> <!-- col-sm-7 / center contetns -->
+			    
+                <!-- right sidemenu -->
+                <div class="col-sm-2 well">
+                    <h4><strong>추천도서</strong></h4>
+                    <div class="thumbnail"> 
+                        <img src="img/book-right1.PNG" class="movie img-responsive" width="300" height="200">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/book-right2.PNG" class="movie img-responsive" width="300" height="200">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/book-right3.PNG" class="movie img-responsive" width="300" height="200">
+                    </div>
+                </div> <!-- col-sm-2 / right sidemenu -->
+            </div> <!-- row / main contents -->
+        </div> <!-- container / main contents -->
+                
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h3><i class="fa fa-info-circle" aria-hidden="true"></i> 도움마당 </h3>
+                    </div> <!-- /.modal-header -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div> <!-- /.modal-body -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-remove"></span> Cancel
+                        </button>
+                        <p>Need <a href="#">help?</a></p>
+                    </div> <!-- /.modal-footer -->
+                </div> <!-- /.modal-content -->
+            </div> <!-- /.modal-dialog -->
+        </div> <!-- /.modal -->
+
+        
+<!-- Footer -->
+<footer>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <ul class="list-inline text-center">
+                <li>
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+        </div>
+    </div>
+</div>
+</footer>
+		
+	</body>
+</html>

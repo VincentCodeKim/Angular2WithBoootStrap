@@ -1,0 +1,10 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <h3>Example</h3><br>
+    <exbutton buttonClass="btn btn-default" 
+        (click)="onSearch()" text="조회">
+    </exbutton><br><br>
+    <exlist [properties]="myList.properties" name="myList" ngDefaultControl (itemClick)="onItemClick($event)">   
+    </exlist><br>
+    <expagenation [properties] = "myPagination.properties"  name="myPagination" ngDefaultControl (changePage)="onChangePage($event)">
+    </expagenation>
+</form>

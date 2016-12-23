@@ -1,0 +1,7 @@
+<ul class="pagination">
+    <li [class.disabled]="currentPage<=buttonCount" ><a (click)="setFirstPage()" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li [class.disabled]="currentPage<=buttonCount" ><a (click)="setPrevPage()" aria-label="Previous"><span aria-hidden="true">&lsaquo;</span></a></li>
+    <li [class.active]="currentPage==item" *ngFor="let item of numberItems" ><a (click)="setCurrentPage(item)">{{item}} <span class="sr-only">(current)</span></a></li>
+    <li [class.disabled]="buttonStartIndex > maxPage - buttonCount"><a (click)="setNextPage()" aria-label="Next"><span aria-hidden="true">&rsaquo;</span></a></li>
+    <li [class.disabled]="buttonStartIndex > maxPage - buttonCount"><a (click)="setLastPage()" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+</ul>

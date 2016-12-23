@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navs Taps</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	
+<div class="container">
+	<h3>Tabs With Dropdown Menu</h3>
+	<ul id="myTab" class="nav nav-tabs nav-justified" role="tablist">
+    <li class="active"><a data-toggle="tab" href="home-tab"  >Home</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a data-toggle="tab" href="#submenu1-1-tab">Submenu 1-1</a></li>
+        <li><a data-toggle="tab" href="#submenu1-1-tab">Submenu 1-2</a></li>
+      </ul>
+    </li>
+    <li><a data-toggle="tab" href="#menu2-tab">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3-tab">Menu 3</a></li>
+  </ul>
+<div class="tab-content">
+  <div id="home-tab" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>Home Content is ...</p>
+  </div>
+  <div id="submenu1-1-tab" class="tab-pane fade in ">
+    <h3>Submenu 1-1</h3>
+    <p>Submenu 1-1 Content is ...</p>
+  </div>
+  <div id="submenu1-2-tab" class="tab-pane fade in ">
+    <h3>Submenu 1-2</h3>
+    <p>Submenu 1-2 Content is ...</p>
+  </div>
+  <div id="menu2-tab" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Menu2 Content is ...</p>
+  </div>
+  <div id="menu3-tab" class="tab-pane fade">
+    <h3>Menu 3</h3>
+    <p>Menu3 Content is ...</p>
+  </div>
+</div>
+  
+</div>
+</body>
+</html>

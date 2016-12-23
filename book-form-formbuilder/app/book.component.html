@@ -1,0 +1,32 @@
+<h3>도서등록</h3>
+<form [formGroup]="bookForm" #f (ngSubmit)="onSubmit(f)">
+    <label for="id" style="width:100px;display:inline-block" >아이디: </label>
+    <input type="text" name="id" formControlName="id" ><br>
+    <div *ngIf="bookForm.controls['id'].touched"  [hidden]="bookForm.controls['id'].valid" style="background-color:red;color:white">
+        아이디를 입력하세요.
+    </div>        
+    <label for="name" style="width:100px;display:inline-block" >도서명: </label>
+    <input type="text" name="name" formControlName="name" ><br>
+    <div *ngIf="bookForm.controls['name'].touched"  [hidden]="bookForm.controls['name'].valid" style="background-color:red;color:white">
+        도서명을 입력하세요.
+    </div>      
+    <label for="price" style="width:100px;display:inline-block" >가격: </label>
+    <input type="number" name="price" formControlName="price"><br>
+    <div *ngIf="bookForm.controls['price'].touched"  [hidden]="bookForm.controls['price'].valid" style="background-color:red;color:white">
+        가격을 입력하세요.
+    </div>      
+    <label for="date" style="width:100px;display:inline-block" >날짜: </label>
+    <input type="date" name="date" formControlName="date"><br>
+    <div *ngIf="bookForm.controls['date'].touched"  [hidden]="bookForm.controls['date'].valid" style="background-color:red;color:white">
+        날짜를 입력하세요.
+    </div>      
+    <br>
+    <button type="submit">등록</button><br>
+    <br>
+    <div style="background-color:gray">
+        <div [innerText]="'id:' + bookForm.controls['id'].value "></div>
+        <div [innerText]="'name:' + bookForm.controls['name'].value"></div>
+        <div [innerText]="'price:' + bookForm.controls['price'].value"></div>
+        <div [innerText]="'date:' + bookForm.controls['date'].value"></div>
+    </div>
+</form>

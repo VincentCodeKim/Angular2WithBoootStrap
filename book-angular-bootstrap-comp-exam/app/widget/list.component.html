@@ -1,0 +1,6 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of properties.data">
+        <a (click)="onItemClick(item[properties.valueField])" 
+            [innerHTML]="item[properties.displayField]"></a>
+    </li>
+</ul>

@@ -1,0 +1,13 @@
+<h3>도서정보</h3>
+<br>
+<img src="./assets/image/{{book.img}}" height="150" class="img-thumbnail">
+<br><br>
+<table class="table">
+    <tr><td>아이디:</td><td> {{book.id}}</td></tr>
+    <tr><td>도서명: </td><td> <strong>{{book.name}}</strong></td></tr>
+    <tr><td>가격: </td><td> {{book.price}}</td></tr>
+    <tr><td>날짜: </td><td> {{book.date}}</td></tr>
+</table>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-4"><a  [routerLink]="['/books']" class="btn btn-default"  role="button">리스트로 이동</a> <br></div>
+</div>

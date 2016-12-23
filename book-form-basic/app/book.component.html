@@ -1,0 +1,20 @@
+<h3>도서등록</h3>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <label for="id" style="width:100px;display:inline-block" >아이디: </label>
+    <input type="text" name="idname" ngModel #id  required><br>
+    <label for="name" style="width:100px;display:inline-block"  >도서명: </label>
+    <input type="text" name="name" ngModel #name   required><br>
+    <label for="price" style="width:100px;display:inline-block"  >가격: </label>
+    <input type="number" name="price" ngModel #price  required><br>
+    <label for="date" style="width:100px;display:inline-block" >날짜: </label>
+    <input type="date" name="date" ngModel #date  required><br>
+    <br>
+    <button type="submit">등록</button><br>
+    <br>
+    <div style="background-color:gray">
+    <div [innerText]="'bookId:' + id.value"></div>
+    <div [innerText]="'name:' + name.value"></div>
+    <div [innerText]="'price:' + price.value"></div>
+    <div [innerText]="'date:' + date.value"></div>
+    </div>
+</form>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Checked button</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<h3>checked button</h3>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default active">
+      <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+    </label>
+    <label class="btn btn-default">
+      <input type="checkbox" autocomplete="off"> Checkbox 2
+    </label>
+    <label class="btn btn-default">
+      <input type="checkbox" autocomplete="off"> Checkbox 3
+    </label>
+  </div>
+  
+  <hr>
+	<h3>radio button</h3>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-info ">
+      <input type="radio" name="options" id="option1" autocomplete="off" > Radio 1 
+    </label>
+    <label class="btn btn-info active">
+      <input type="radio" name="options" id="option2" autocomplete="off" checked> Radio 2(preselected)
+    </label>
+    <label class="btn btn-info">
+      <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+    </label>
+  </div>
+  
+  <button type="button" id="myStateButton" data-complete-text="finished!" class="btn btn-primary" autocomplete="off">
+    ...
+  </button>
+
+</div>
+
+<script>
+  $('#myStateButton').on('click', function () {
+    $(this).button('complete') // button text will be "finished!"
+  })
+</script>
+
+</body>
+</html>
+

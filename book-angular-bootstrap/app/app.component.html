@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html"><strong>도서관리</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['./books']">목록</a></li>
+                <li><a href="#">기타</a></li>
+            </ul>
+        </div> <!-- /.navbar-collapse -->
+    </div>  <!-- /.container -->
+</nav>
+<br>
+<br>
+<br>
+<router-outlet></router-outlet>

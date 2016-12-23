@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Popover</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  /* Popover */
+  .popover {
+        border-left: 2px dotted blue;
+        border-right: 2px solid red;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+  }
+  /* Popover Header */
+  .popover-title {
+      background-color: #73AD21;
+      color: #FFFFFF;
+      font-size: 28px;
+      text-align:center;
+  }
+  /* Popover Body */
+  .popover-content {
+      background-color: coral;
+      color: #FFFFFF;
+      padding: 25px;
+  }
+  /* Popover Arrow */
+  .arrow {
+      border-right-color: blueviolet !important;
+  }
+  </style>
+</head>
+
+<body style="margin:200px;">
+<div class="container">
+  <br><br><br><br>
+	<div style="margin-top: 30px;">
+    <a href="#" data-toggle="popover" data-html="true" title="popover title" 
+    data-content="<h3>content <a href='http://google.com'>popover</a></h3>" data-trigger="hover" 
+    data-delay='{ "show": 500, "hide": 3000 }'>Popover Delay</a>
+	</div>
+</div>
+
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover(); 
+
+        $('[data-toggle="popover"]').on('hidden.bs.popover', function () {
+            alert("event start~~");
+        });
+    });
+</script>
+
+</body>
+</html>
+

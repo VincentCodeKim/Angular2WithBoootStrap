@@ -1,0 +1,6 @@
+<h3>도서리스트</h3>
+<ul *ngFor="let book of books">
+    <book-image [path]="book.img" [title]="book.name" [width]="60" [height]="'80'" (selectBook)="onSelectBook(book.name)"></book-image>
+</ul>
+<br>
+선택된 도서: <input type="text" name="selectedBook" value="{{bookName}}">

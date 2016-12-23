@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Popover</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body style="margin:200px;">
+<div class="container">
+  <h3>Popover  Example</h3>
+	<button type="button" class="btn btn-warning btn-lg" data-toggle="popover" data-placement="left" title="<h4>popover-title</h4>" data-html="true" data-content="<h3>content</h3>">Popover on left</button>
+	<button type="button" class="btn btn-danger" data-toggle="popover" data-placement="top" title="popover-title" data-html="true" data-content="<h3>content</h3>">Popover on top</button>&nbsp;
+  <a href="#" data-toggle="popover" data-placement="bottom" id="myPopover" data-trigger="focus"  title="Dismissible popover" data-content="Click anywhere in the document to close this popover">Popover on bottom</a>&nbsp;&nbsp;
+  <a href="#" data-toggle="popover" data-placement="right" data-trigger="hover"  title="hover popover"  data-content="use the data-trigger attribute with a value of 'hover'">Popover on right</a>
+</div>
+
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+      $('[data-toggle="popover"]').popover({
+        delay: { "show": 0, "hide": 100000 }
+      });
+  });
+</script>
+
+</body>
+</html>
+
